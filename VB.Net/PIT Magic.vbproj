@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>35c2f91e-b74c-4d75-a9e8-592a8dfc1876</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>PIT Magic</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="PIT_Magic\My\MyApplication.vb" />
+    <Compile Include="PIT_Magic\My\MyComputer.vb" />
+    <Compile Include="PIT_Magic\My\MyProject.vb" />
+    <Compile Include="PIT_Magic\DummyDataType.vb" />
+    <Compile Include="PIT_Magic\PitData.vb" />
+    <Compile Include="PIT_Magic\PitEntry.vb" />
+    <Compile Include="PIT_Magic\PitInputStream.vb" />
+    <Compile Include="PIT_Magic\PitOutputStream.vb" />
+    <Compile Include="PIT_Magic\My\Resources\Resources.vb" />
+    <Compile Include="PIT_Magic\My\MySettings.vb" />
+    <Compile Include="PIT_Magic\PIT_Magic_Main.vb" />
+    <EmbeddedResource Include="PIT_Magic.Resources.resources" />
+    <EmbeddedResource Include="PIT_Magic.PIT_Magic_Main.resources" />
+  </ItemGroup>
+</Project>
