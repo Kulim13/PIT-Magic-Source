@@ -1,0 +1,7 @@
+*.zip        binary
+*.resources  binary
+*.vb                 eol=crlf
+*.vbproj             eol=crlf
+*.cs                 eol=crlf
+*.csproj             eol=crlf
+README.md            eol=crlf
