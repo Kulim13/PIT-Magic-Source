@@ -3,7 +3,8 @@
 <h3><em>PIT Magic is the All In One solution for Creating, Editing and Analyzing Samsung PIT Files.</em></h3>
 
 original XDA thread: https://forum.xda-developers.com/showthread.php?t=1916936
-the <code>_binary_</code> you'll find <code>PIT_Magic_v1.3.10_Release.zip</code>, as downloaded from somewhere.
+
+in the <code>&#095;binary&#095;</code> you'll find <code>PIT_Magic_v1.3.10_Release.zip</code>, as downloaded from somewhere.
 
 <hr/>
 
